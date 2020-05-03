@@ -1,0 +1,10 @@
+<div class="busy-black-overlay" [ngStyle]="{'background-color': bdColor}">
+  <div class="loading-content" [ngStyle]="{ 'background-color': bgColor, 'color': color }">
+    <div>
+      <div [class]="getSpinnerClass()" [style.color]="color" id="spinningitem" *ngIf="divArray">
+        <div *ngFor="let i of divArray"></div>
+      </div>
+    </div>
+    <p *ngIf="message" [style.color]="color" [innerHtml]="message"></p>
+  </div>
+</div>

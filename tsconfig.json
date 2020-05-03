@@ -17,7 +17,21 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "busy-indicator": [
+        "dist/busy-indicator"
+      ],
+      "busy-indicator/*": [
+        "dist/busy-indicator/*"
+      ],
+      "dynamic-dom-injector": [
+        "dist/dynamic-dom-injector"
+      ],
+      "dynamic-dom-injector/*": [
+        "dist/dynamic-dom-injector/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
