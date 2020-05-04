@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BusyIndicatorComponent } from './busy-indicator.component';
-import { DynamicDomInjectorService } from 'dynamic-dom-injector';
+import { DynamicDomInjectorService } from '@acharyarajasekhar/dynamic-dom-injector';
 
 @Injectable({
   providedIn: 'root'
