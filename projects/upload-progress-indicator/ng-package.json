@@ -1,0 +1,11 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../dist/upload-progress-indicator",
+  "lib": {
+    "entryFile": "src/public-api.ts",
+    "umdModuleIds": {
+      "dynamic-dom-injector": "dynamic-dom-injector",
+      "@acharyarajasekhar/dynamic-dom-injector": "@acharyarajasekhar/dynamic-dom-injector"
+    }
+  }
+}

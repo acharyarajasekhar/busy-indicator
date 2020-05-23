@@ -2,7 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { BusyIndicatorModule } from 'busy-indicator';
+import { BusyIndicatorModule } from 'projects/busy-indicator/src/public-api';
+import { UploadProgressIndicatorModule } from 'projects/upload-progress-indicator/src/public-api';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import { BusyIndicatorModule } from 'busy-indicator';
   ],
   imports: [
     BrowserModule,
-    BusyIndicatorModule
+    BusyIndicatorModule,
+    UploadProgressIndicatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

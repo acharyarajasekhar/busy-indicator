@@ -190,6 +190,41 @@
           }
         }
       }
+    },
+    "upload-progress-indicator": {
+      "projectType": "library",
+      "root": "projects/upload-progress-indicator",
+      "sourceRoot": "projects/upload-progress-indicator/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/upload-progress-indicator/tsconfig.lib.json",
+            "project": "projects/upload-progress-indicator/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/upload-progress-indicator/src/test.ts",
+            "tsConfig": "projects/upload-progress-indicator/tsconfig.spec.json",
+            "karmaConfig": "projects/upload-progress-indicator/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/upload-progress-indicator/tsconfig.lib.json",
+              "projects/upload-progress-indicator/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "busy-indicator-demo"
 }

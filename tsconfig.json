@@ -30,6 +30,12 @@
       ],
       "dynamic-dom-injector/*": [
         "dist/dynamic-dom-injector/*"
+      ],
+      "upload-progress-indicator": [
+        "dist/upload-progress-indicator"
+      ],
+      "upload-progress-indicator/*": [
+        "dist/upload-progress-indicator/*"
       ]
     }
   },

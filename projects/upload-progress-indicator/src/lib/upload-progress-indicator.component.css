@@ -1,0 +1,82 @@
+.upload-content {
+    font-size: 1rem;
+    align-content: center;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.upload-black-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999 !important;
+}
+
+.upload-black-overlay>div {
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.upload-black-overlay>.upload-content>p {
+    /* font-family: sans-serif;
+    font-weight: 100;
+    font-size: 1.0rem; */
+    margin-top: 4px;
+    margin-bottom: 24px;
+}
+
+#upload-status {
+    width: 200px;
+    text-align: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#upload-icon {
+    font-size: 3em;
+}
+
+#pregress-value {
+    width: 100%;
+    text-align: center;
+}
+
+.progress-outer {
+    width: 100%;
+    padding: 2px;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+    color: #000;
+    border-radius: 20px;
+}
+
+.progress-inner {
+    height: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.icon {
+    margin-top: 0px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+  }
+  
+  .icon-upload {
+    background-image: url(./upload.svg);
+  }
