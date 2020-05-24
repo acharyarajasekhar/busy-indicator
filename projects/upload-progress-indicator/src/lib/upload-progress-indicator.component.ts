@@ -10,6 +10,7 @@ export class UploadProgressIndicatorComponent implements OnInit, OnDestroy {
   @Input() bdColor = 'rgba(0,0,0,0.3)';
   @Input() bgColor = 'rgb(255, 255, 255, 1)';
   @Input() color = 'rgb(54, 62, 71, 1)';
+  @Input() icon = "cloud-upload-outline";
 
   @Input() message: string = "Updating...";
   @Input() progress: number = -1;

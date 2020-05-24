@@ -1,6 +1,6 @@
 <div class="upload-black-overlay" [ngStyle]="{'background-color': bdColor}">
     <div class="upload-content" [ngStyle]="{ 'background-color': bgColor, 'color': color }">
-        <span class="icon icon-upload" [ngStyle]="{ 'color': color }"></span><br/>
+        <ion-icon [name]="icon" id="upload-icon"></ion-icon>
         <p> {{ message }} {{ (progress >= 0 && progress <= 100) ? ' - ' + progress + '%' : '' }}
         </p>
         <div class="progress-outer" [ngStyle]="{ 'border-color': color }">

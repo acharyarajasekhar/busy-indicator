@@ -36,6 +36,12 @@
       ],
       "upload-progress-indicator/*": [
         "dist/upload-progress-indicator/*"
+      ],
+      "offline-indicator": [
+        "dist/offline-indicator"
+      ],
+      "offline-indicator/*": [
+        "dist/offline-indicator/*"
       ]
     }
   },

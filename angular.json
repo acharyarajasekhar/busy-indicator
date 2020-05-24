@@ -225,6 +225,41 @@
           }
         }
       }
+    },
+    "offline-indicator": {
+      "projectType": "library",
+      "root": "projects/offline-indicator",
+      "sourceRoot": "projects/offline-indicator/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/offline-indicator/tsconfig.lib.json",
+            "project": "projects/offline-indicator/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/offline-indicator/src/test.ts",
+            "tsConfig": "projects/offline-indicator/tsconfig.spec.json",
+            "karmaConfig": "projects/offline-indicator/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/offline-indicator/tsconfig.lib.json",
+              "projects/offline-indicator/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "busy-indicator-demo"
 }
